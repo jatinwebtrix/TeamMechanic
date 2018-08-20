@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vincit.mechanic.mrmechanic.Verify_Phone"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="-15dp"
+        >
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="+91"
+            android:layout_gravity="bottom"
+            android:textSize="16sp"
+            android:gravity="bottom"
+            android:textColor="@color/colorPrimary"
+            />
+        <EditText
+            android:id="@+id/phone_to_verify"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorPrimary"
+            android:hint="Phone number"
+            android:inputType="number"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:theme="@style/EditTextTheme2"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Verify"
+        android:layout_marginLeft="0dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="_verify_click"
+        android:background="#ffffff"
+        />
+</LinearLayout>

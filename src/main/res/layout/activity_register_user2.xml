@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.vincit.mechanic.mrmechanic.RegisterUser"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+
+                >
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:text="+91"
+                    android:layout_gravity="bottom"
+                    android:textSize="16sp"
+                    android:gravity="bottom"
+                    android:textColor="@color/colorWhite"
+                    />
+                <EditText
+                    android:id="@+id/user_phone2"
+                    android:layout_width="270dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Phone number"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:theme="@style/EditTextTheme"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/service_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Service Type"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorWhite"
+                />
+            <Spinner
+                android:id="@+id/user_service"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite2"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:spinnerMode="dialog"
+                />
+
+
+            <TextView
+                android:id="@+id/sub_service_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Sub category"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone"
+                />
+            <Spinner
+                android:id="@+id/user_sub_service"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite2"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:spinnerMode="dialog"
+                android:visibility="gone"
+                />
+
+
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textSize="16sp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorWhite"
+                android:text="No Address Chosen"
+                />
+
+
+
+            <Button
+                android:id="@+id/user_location"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorWhite"
+                android:text="Change Location"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:theme="@style/EditTextTheme2"
+                android:background="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:onClick="SelectMap"
+                />
+
+
+
+            <Button
+                android:id="@+id/user_submit2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="Submit_Click2"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
+                android:text="Submit"
+                android:layout_marginBottom="20dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

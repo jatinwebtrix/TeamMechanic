@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/back"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vincit.mechanic.mrmechanic.AccountUser"
+    tools:showIn="@layout/app_bar_account_user">
+
+
+    <LinearLayout
+        android:id="@+id/layout_response"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cust_response_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need Roadside Assistance"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+        <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/service_request"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:onClick="Service_Click"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_edit_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/user_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/upload_profile"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:onClick="updateProfileClick"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:theme="@style/EditTextThemeTextInput"
+                    android:layout_marginTop="10dp"
+                    >
+                <EditText
+                    android:id="@+id/user_full_name"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:hint="Full Name"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:theme="@style/EditTextTheme2"
+                    />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:theme="@style/EditTextThemeTextInput"
+                    android:layout_marginTop="10dp"
+                    >
+                <EditText
+                    android:id="@+id/user_full_email"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:hint="Email"
+                    android:textColorHint="@color/colorPrimary"
+                    android:inputType="textEmailAddress"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:theme="@style/EditTextTheme2"
+                    />
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/colorWhite"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:text="+91"
+                        android:layout_gravity="bottom"
+                        android:textSize="16sp"
+                        android:gravity="bottom"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:theme="@style/EditTextThemeTextInput"
+
+                        >
+                    <EditText
+                        android:id="@+id/user_phone"
+                        android:layout_width="270dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/colorPrimary"
+                        android:hint="Phone number"
+                        android:inputType="number"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:theme="@style/EditTextTheme2"
+                        />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+                <Button
+
+                    android:id="@+id/update_user"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Update"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="UpdateUser"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.vincit.mechanic.mrmechanic.RegisterUser"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <EditText
+        android:id="@+id/user_full_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Full Name"
+        android:textColorHint="@color/colorWhite2"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:theme="@style/EditTextTheme"
+        />
+    <EditText
+        android:id="@+id/user_full_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Enter Email"
+        android:textColorHint="@color/colorWhite2"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:theme="@style/EditTextTheme"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="+91"
+            android:layout_gravity="bottom"
+            android:textSize="16sp"
+            android:gravity="bottom"
+            android:textColor="@color/colorWhite"
+            />
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:textColorHint="@color/colorWhite2"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:theme="@style/EditTextTheme"
+        />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/user_address"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:hint="Address"
+        android:textColorHint="@color/colorWhite2"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:theme="@style/EditTextTheme"
+        />
+
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:hint="Password"
+            android:textColorHint="@color/colorWhite2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:theme="@style/EditTextTheme"
+            android:inputType="textPassword"
+            />
+
+
+        <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:padding="2dp"
+            android:layout_marginTop="40dp"
+        >
+
+        <Spinner
+            android:id="@+id/user_state"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorWhite"
+            android:hint="State"
+            android:textColorHint="@color/colorWhite2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:spinnerMode="dropdown"
+
+            />
+        <Spinner
+            android:id="@+id/user_city"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorWhite"
+            android:hint="City"
+            android:textColorHint="@color/colorWhite2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginLeft="10dp"
+            android:spinnerMode="dropdown"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        >
+
+        <Spinner
+            android:id="@+id/user_vehicle_cat"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorWhite"
+            android:hint="State"
+            android:textColorHint="@color/colorWhite2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:spinnerMode="dropdown"
+            />
+
+        <Spinner
+            android:id="@+id/user_vehicle_subcat"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorWhite"
+            android:hint="State"
+            android:textColorHint="@color/colorWhite2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:spinnerMode="dropdown"
+            />
+
+
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_vehicle_mo"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:hint="Vehicle Model"
+            android:textColorHint="@color/colorWhite2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:theme="@style/EditTextTheme"
+
+            />
+
+        <EditText
+            android:id="@+id/user_vehicle_make"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:hint="Vehicle Make"
+            android:textColorHint="@color/colorWhite2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:theme="@style/EditTextTheme"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            >
+
+            <EditText
+                android:id="@+id/user_vehicle_n"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/colorWhite"
+                android:hint="Vehicle No."
+                android:textColorHint="@color/colorWhite2"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:theme="@style/EditTextTheme"
+                />
+            <EditText
+                android:id="@+id/user_vehicle_year"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/colorWhite"
+                android:hint="Year"
+                android:textColorHint="@color/colorWhite2"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:layout_marginLeft="20dp"
+                android:theme="@style/EditTextTheme"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/user_upload_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:text="Upload Image"
+            android:layout_gravity="center_horizontal"
+            android:onClick="showFileChooser"
+            />
+
+
+        <Button
+
+            android:id="@+id/register_user"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:background="@drawable/register_btn"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:onClick="RegisterUser"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Terms and Conditions"
+            android:textSize="10sp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

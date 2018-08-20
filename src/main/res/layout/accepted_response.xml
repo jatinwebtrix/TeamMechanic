@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    >
+
+
+
+
+    <TextView
+        android:id="@+id/response_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        />
+    <TextView
+        android:id="@+id/response_eta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        />
+    <TextView
+        android:id="@+id/response_vendor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        />
+    <TextView
+        android:id="@+id/response_vendor_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        />
+    <TextView
+        android:id="@+id/response_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorWhite"
+        />
+
+</LinearLayout>

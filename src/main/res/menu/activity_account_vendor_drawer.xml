@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_request"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Request" />-->
+
+
+        <!--<item-->
+            <!--android:id="@+id/nav_edit"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Account" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_logout"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Logout" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_exit"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Exit" />-->
+        <!---->
+
+    <!--</group>-->
+
+    <item android:id="@+id/nav_request"
+    android:icon="@drawable/ic_menu_camera"
+    android:title="Request" />
+
+    <item android:title="Account">
+        <menu>
+            <item android:id="@+id/nav_edit"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Profile" />
+
+            <item android:id="@+id/nav_edit_bank"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Bank Details" />
+
+            <item android:id="@+id/nav_edit_services"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Your Services" />
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact Us" />
+            <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Exit" />
+
+        </menu>
+    </item>
+
+</menu>

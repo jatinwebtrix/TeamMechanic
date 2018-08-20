@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Team Mechanic</string>
+    <string name="google_android_map_api_key">AIzaSyBO8THNKXcKfbORc25zdc0cDFfvLKGpd9E</string>
+    <string name="title_activity_account_user">AccountUser</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_account_vendor">AccountVendor</string>
+</resources>

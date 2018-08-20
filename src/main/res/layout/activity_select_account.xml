@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vincit.mechanic.mrmechanic.SelectAccount">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <Button
+        android:id="@+id/signup_customer"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="80dp"
+        android:text="Continue As Customer >>"
+        android:layout_marginLeft="0dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="_customer_click"
+        android:background="#ffffff"
+        />
+    <Button
+        android:id="@+id/signup_vendor"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Continue As Mechanic >>"
+        android:layout_marginLeft="0dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="_mechanic_click"
+        android:background="#ffffff"
+        />
+
+
+</LinearLayout>
